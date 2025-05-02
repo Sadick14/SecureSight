@@ -60,3 +60,14 @@ export interface SystemHealth {
   reposMonitored: number;
   avgResolutionTime: string;
 }
+
+export interface Project {
+  id: string;
+  created_at: string;
+  user_id: string;
+  name: string;
+  description?: string;
+  type: 'repo' | 'upload';
+  repo_url?: string;
+  uploaded_files?: string[];
+}
